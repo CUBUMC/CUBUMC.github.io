@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 767px) {
 	.jumbotron {
-		height: 255px !important;
+		height: 275px !important;
 	}
 }
 
@@ -42,7 +42,11 @@
 .jumbotron h1, .jumbotron p {
 	color: #fff;
 }
-
+.marketing img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
 #todoblog {
 	color: #9d9d9d;
 }
