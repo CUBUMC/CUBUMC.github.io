@@ -1,4 +1,9 @@
 name: "CUBU"
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
 defaults:
     scope:
       path: "" # an empty string here means all files in the project
