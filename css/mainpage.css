@@ -14,11 +14,12 @@
 }
 
 .navbar {
-	margin-bottom: 0;		
+	margin-bottom: 0;	
+	border-radius: 0px;	
 }
 
 .jumbotron {
-	background-image: url("{{site.url}}/img/bgjumbotronshaderblured.png");
+	background-image: url("{{site.url}}/img/bgjumbotronshaderblured.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
