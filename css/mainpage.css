@@ -1,0 +1,68 @@
+---
+---
+@media screen and (min-width: 768px) {
+	.jumbotron
+	{
+	  padding: 90px 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.jumbotron {
+		height: 255px !important;
+	}
+}
+
+.navbar {
+	margin-bottom: 0;		
+}
+
+.jumbotron {
+	background-image: url("{{site.url}}/img/bgjumbotronshaderblured.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 375px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#jb-ip-button {
+	border: 2px solid #384c16;
+	color: #fff;
+	-webkit-transition: background-color .2s ease-in;
+	-moz-transition: background-color .2s ease-in;
+	-o-transition: background-color .2s ease-in;
+	transition: background-color .2s ease-in;
+}
+
+#jb-ip-button:hover {
+	background-color: #384c16;
+}
+
+.jumbotron h1, .jumbotron p {
+	color: #fff;
+}
+
+#todoblog {
+	color: #9d9d9d;
+}
+
+#todoblog+.tooltip {
+	left: -68px;
+	width: 200px;
+}
+
+
+#news-excerpt, #news-excerpt:hover, #news-excerpt:focus {
+	text-decoration: none !important;
+	color: #333333;
+}
+
+.news-excerpt {
+	background-color: #f0f0f0 !important;
+	color: #333333
+}
+
+#news-panel {
+	border-left: 5px solid #86B635;
+}
