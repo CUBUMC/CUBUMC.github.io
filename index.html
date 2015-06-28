@@ -16,12 +16,13 @@ custom_css: mainpage
 				<p><a class="btn btn-lg" id="jb-ip-button" href="#" role="button">PVP.CUBU.FR</a></p>
 			</div>
 		</div>
+		<div id="wrap">
 		<div class="container marketing">
 			<div class="row">
 				<div class="col-lg-4 col-sm-4">
 				  <img class="img-circle text-center" src="{{site.url}}/img/diamond.jpg" alt="Diamants" width="140" height="140">
 				  <h2 class="text-center">100% F2P</h2>
-				  <p class="text-center">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+				  <p class="text-center">Il est possible d'obtenir tous les items et tous les grades du serveur sans débourser un seul centime, permettant à tous de devenir le meilleur, sans privilégier les plus riches !</p>
 				  <p class="text-center"><a class="btn btn-default" href="#" role="button">Voir la FAQ »</a></p>
 				</div><!-- /.col-lg-4 -->
 				<div class="col-lg-4 col-sm-4 col-centered">
@@ -40,35 +41,36 @@ custom_css: mainpage
 		</div>
 		<hr>
 		<div class="container">
-			<h1>Dernière news</h1>
+			<div class="row">
+				<div class="col-md-8">
+					<h1>Dernière news</h1>
 					{% for post in site.posts limit:3 offset:0 %}
-					{% assign author = site.data.author[post.author] %}
-					{% assign m = post.date | date: "%-m" %}
-				
+						{% assign author = site.data.author[post.author] %}
+						{% assign m = post.date | date: "%-m" %}
 
-						
-							<div class="panel panel-default news-excerpt" id="news-panel">
-								<div class="panel-heading news-excerpt"><a href="{{ post.url }}" id="news-excerpt"><h2 class="panel-title">{{ post.title }}</h2></a></div>
-								<div class="panel-body">{{ post.content }}</p></div>
-								<div class="panel-footer">Redigé par {{author.name}} le {{ post.date | date: '%d' }} {% case m %}{% when '1' %}janvier{% when '2' %}février{% when '3' %}mai{% when '4' %}avril{% when '5' %}mai{% when '6' %}juin{% when '7' %}juillet{% when '8' %}août{% when '9' %}septembre{% when '10' %}octobre{% when '11' %}novembre{% when '12' %}décembre{% endcase %} {{ post.date | date: '%Y' }} à {{post.date | date: '%Hh%M'}}</div>
-							</div>
-						
+						<div class="panel panel-default news-excerpt" id="news-panel">
+							<div class="panel-heading news-excerpt"><a href="{{ post.url }}" id="news-excerpt"><h2 class="panel-title">{{ post.title }}</h2></a></div>
+							<div class="panel-body">{{ post.excerpt }}</p></div>
+							<div class="panel-footer">Redigé par {{author.name}} le {{ post.date | date: '%d' }} {% case m %}{% when '1' %}janvier{% when '2' %}février{% when '3' %}mai{% when '4' %}avril{% when '5' %}mai{% when '6' %}juin{% when '7' %}juillet{% when '8' %}août{% when '9' %}septembre{% when '10' %}octobre{% when '11' %}novembre{% when '12' %}décembre{% endcase %} {{ post.date | date: '%Y' }} à {{post.date | date: '%Hh%M'}}</div>
+						</div>
+									
 					{% endfor %}
 					Voir les autres posts
 
 					{% comment %}
 						{% for post in site.posts limit:10 offset:1 %}
 						{% assign author = site.data.author[post.author] %}
-	<a href="{{ post.url }}" id="news-excerpt">
-								<div class="panel panel-default news-excerpt" id="news-panel">
-									<div class="panel-heading news-excerpt"><h3 class="panel-title">{{ post.title }}</h3><span class="pull-right text-muted">{{author.name}}</span></div>
-									<div class="panel-body">{{ post.excerpt }}</p></div>
-								</div>
-							</a>
+						<a href="{{ post.url }}" id="news-excerpt">
+							<div class="panel panel-default news-excerpt" id="news-panel">
+								<div class="panel-heading news-excerpt"><h3 class="panel-title">{{ post.title }}</h3><span class="pull-right text-muted">{{author.name}}</span></div>
+								<div class="panel-body">{{ post.excerpt }}</p></div>
+							</div>
+						</a>
 						{% endfor %}
 					{% endcomment %}
-				
+				</div>
+			</div>
 		</div>
-
+</div>
 {% include footer.html %}
 {%include foot.html%}
