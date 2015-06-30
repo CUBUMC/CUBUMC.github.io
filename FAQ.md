@@ -34,8 +34,8 @@ Oui, il est activé sauf dans le spawn et dans certaines zones protégées.
 Ce phénomène s’explique de trois façons :
 
  * Le lag, qui fait que le serveur n’a pas pris en compte le cassage de ce bloc ou que l’information n’est pas encore transmise au client.
- * La zone est sous l’effet d’un “cuboïdage”, c’est à dire que la zone à été protégée à l’aide d’un plug-in côté serveur pour empêcher toute personne non autorisée à accéder à cette zone. Aucune action n’est alors possible => impossible de poser un cube ou d’en casser un notamment.
- * Vous avez atteint la limite de ce monde, car quand on creuse vers une frontière, le bloc réapparaît.
+ * La zone est sous l’effet d’un claim, c’est à dire que la zone à été protégée à l’aide d’un plugin côté serveur pour empêcher toute personne non autorisée à accéder à cette zone. Aucune action n’est alors possible => impossible de poser un cube ou d’en casser un notamment.
+ * L'antichest fait des siennes et croit que vous utilisez un programme pour casser les blocs plus vite. Si ce n'est pas le cas, contactez un membre du Staff.
 <hr>
 
 ### *Quels sont les mods autorisés ?*
@@ -67,4 +67,3 @@ Pour réactiver les messages d'Auctions, réexcutez la commande `/auction spam`.
 
 <div class="alert alert-danger" role="alert">Un bug provoque l'impossibilité de réactiver les messages d'Auctions chez certains joueurs. La commande est donc à utiliser avec précautions et en connaissance de cause.
 </div>
-Test

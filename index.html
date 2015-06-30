@@ -37,70 +37,7 @@ custom_css: mainpage
     </div>
   </div>
   <hr>
-  {% comment %}
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h1>Dernière news</h1>
-        {% for post in site.posts limit:3 offset:0 %}
-        {% assign author = site.data.author[post.author] %}
-        {% assign m = post.date | date: "%-m" %}
-        <div class="news-excerpt" id="news-panel">
-          <img width="100%" max-height="200px" class="news-img-top" src="{{ site.baseurl }}/img/bgjumbotron.jpg" alt="img">
-          <div class="panel-heading news-excerpt">
-            <a href="{{ post.url }}" id="news-excerpt">
-              <h2 class="panel-title">{{ post.title }}</h2>
-            </a>
-          </div>
-          <div class="panel-body"> {{ post.excerpt }}</p></div>
-          <div class="panel-footer">Redigé par {{author.name}} le {{ post.date | date: '%d' }} {% case m %}{% when '1' %}janvier{% when '2' %}février{% when '3' %}mai{% when '4' %}avril{% when '5' %}mai{% when '6' %}juin{% when '7' %}juillet{% when '8' %}août{% when '9' %}septembre{% when '10' %}octobre{% when '11' %}novembre{% when '12' %}décembre{% endcase %} {{ post.date | date: '%Y' }} à {{post.date | date: '%Hh%M'}}</div>
-        </div>
-        {% endfor %}{% endcomment %}
-        <!--<div class="news-excerpt" id="news-panel">
-          <!--<img width="100%" max-height="200px" class="news-img-top" src="{{ site.baseurl }}/img/bgjumbotron.jpg" alt="img">
-          	<div class="news-excerpt-head">
-          		<div class="row">
-          			<!--<div class="col-lg-8 col-lg-offset-2">
-          				<a href="#" id="news-excerpt">
-          					<h2 class="panel-title">Titre de malade</h2>
-          				</a>
-          			<!--</div>
-          		</div>
-          		<div class="panel-body">Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</div>
-          		<div class="panel-footer">Redigé par sharpJokyll le 1er juin à 18h42</div>
-          	</div>
-          </div>-->
-        <a href="#">
-          <div class="news-post">
-            <div class="col-lg-12 col-md-12 news-excerpt-head">
-              <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
-                <h2 style="color:white;">Man must explore, and this is exploration at its greatest</h2>
-              </div>
-            </div>
-            <div class="news-excerpt-body col-lg-12 col-md-12">
-              <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
-              </p>
-            </div>
-          </div>
-        </a>
-        {% comment %}
-        {% for post in site.posts limit:10 offset:1 %}
-        {% assign author = site.data.author[post.author] %}
-        <a href="{{ post.url }}" id="news-excerpt">
-          <div class="panel panel-default news-excerpt" id="news-panel">
-            <div class="panel-heading news-excerpt">
-              <h3 class="panel-title">{{ post.title }}</h3>
-              <span class="pull-right text-muted">{{author.name}}</span>
-            </div>
-            <div class="panel-body">{{ post.excerpt }}</p></div>
-          </div>
-        </a>
-        {% endfor %}
-        {% endcomment %}
-      </div>
-    </div>
-  </div>
-  {% endcomment %}
+ 
   <div class="container">
 		<div class="row">
 			<div class="col-md-8">
@@ -116,7 +53,6 @@ custom_css: mainpage
 					</div>
 								
 				{% endfor %}
-				Voir les autres posts
 
 				{% comment %}
 					{% for post in site.posts limit:10 offset:1 %}
