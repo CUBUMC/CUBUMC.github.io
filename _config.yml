@@ -4,3 +4,5 @@ defaults:
       path: ""
     values:
       site.data.author: default
+kramdown:
+  input: GFM

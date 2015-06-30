@@ -68,6 +68,29 @@
 	color: #333333
 }
 
+.news-excerpt-head {
+	background-image: url("/img/bgjumbotron.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 175px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.news-excerpt-body {
+	margin-top: 10px;
+}
+
 #news-panel {
 	border-left: 5px solid #86B635;
+}
+
+.news-img-top {
+	border-top-right-radius:3px;
+}
+
+.news-post {
+	border-left: 5px solid #86B635;
+	overflow: hidden;	
+	background-color: #f0f0f0;
 }
